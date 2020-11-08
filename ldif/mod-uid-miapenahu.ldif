@@ -1,0 +1,5 @@
+dn: uid=miapenahu,ou=development,dc=swarch,dc=geosmart,dc=com
+changetype: moddn
+newrdn: uid=miapenahu2
+deleteoldrdn: 1
+newsuperior: ou=development,dc=swarch,dc=geosmart,dc=com

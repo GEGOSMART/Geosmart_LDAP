@@ -1,0 +1,13 @@
+dn: uid=miapenahu2,ou=development,dc=swarch,dc=geosmart,dc=com
+changetype: modify
+replace: gn
+gn: Firstname
+-
+replace: sn
+sn: Lastname
+-
+replace: cn
+cn: miapenahu@example.com
+-
+replace: uidNumber
+uidNumber: 999

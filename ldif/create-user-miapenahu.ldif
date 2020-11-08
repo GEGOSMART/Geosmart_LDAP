@@ -1,0 +1,13 @@
+dn: uid=miapenahu,ou=development,dc=swarch,dc=geosmart,dc=com
+objectClass: top
+objectclass: inetOrgPerson
+objectClass: posixAccount
+gn:Miguel Alejandro
+sn:Peña Hurtado
+cn: miapenahu@unal.edu.co
+uid: miapenahu
+uidNumber: 1000
+gidNumber: 500
+homeDirectory: /home/miapenahu
+loginShell: /bin/bash
+userPassword: {crypt}x

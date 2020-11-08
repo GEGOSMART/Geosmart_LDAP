@@ -1,0 +1,13 @@
+dn: uid=nicrodriguezval,ou=development,dc=swarch,dc=geosmart,dc=com
+objectClass: top
+objectclass: inetOrgPerson
+objectClass: posixAccount
+gn:Nicolás
+sn:Rodriguez Valenzuela
+cn: nicrodriguezval@unal.edu.co
+uid: nicrodriguezval
+uidNumber: 1000
+gidNumber: 500
+homeDirectory: /home/nicrodriguezval
+loginShell: /bin/bash
+userPassword: {crypt}x
