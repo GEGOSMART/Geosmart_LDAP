@@ -94,3 +94,21 @@ uidNumber: 999
 -> Eliminar usuario de la base de datos
 
 ldapdelete -H ldap://18.210.193.21 -D "cn=admin,dc=swarch,dc=geosmart,dc=com" -w "admin" "uid=miapenahu2,ou=development,dc=swarch,dc=geosmart,dc=com"
+
+-> Autenticar un usuario en la base de datos
+
+-> La contraseña no es correcta
+
+ldapwhoami -H ldap://18.210.193.21 -D "uid=miapenahu,ou=development,dc=swarch,dc=geosmart,dc=com" -w "@not-the-password"
+
+-> Esto responde:
+
+ldap_bind: Invalid credentials (49)
+
+-> La contraseña es correcta (se asume que la contraseña fue cambiada con el comando de arriba)
+
+ldapwhoami -H ldap://18.210.193.21 -D "uid=miapenahu,ou=development,dc=swarch,dc=geosmart,dc=com" -w "Abcd1234"
+
+-> Esto responde con la ruta completa del usuario:
+
+dn:uid=miapenahu,ou=development,dc=swarch,dc=geosmart,dc=com
